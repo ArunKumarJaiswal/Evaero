@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebPresence.master.cs" Inherits="WebPresence.WebPortal.WebPresence" %>
+<%@ Register Src="~/UserControls/PortalCssJs.ascx" TagName="CssJs" TagPrefix="jQuerySupport" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>WebPresence</title>
+    <jQuerySupport:CssJs runat="server" ID="jQueryCssJs" />
+    <!--[if lt IE 9]>
+<script src="../js/html5.js"></script>
+<![endif]-->
+    <script type="text/javascript">
+       
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+	<section id="page-holder">
+    	<!----inner-page-holder-start---->
+    	<section id="inner-page-holder">
+        	<header>
+            	<section class="logo"><img src="../images/logo.png" alt="Webpresence" /></section>
+                <section class="right-header">
+                	<p class="my-account">Logged In: 
+                        <asp:Label ID="lblUName" runat="server"></asp:Label>
+                    </p>                	
+                    <asp:LinkButton ID="lnkLogout" CssClass="logout" runat="server" CausesValidation="False" onclick="lnkLogout_Click" ToolTip="Logout" />
+                    <span class="LILogout" > Logout</span> 
+                </section>
+            </header>
+            </section>
+            <section id="wrap">
+            	<section id="menu-bar">
+                    <table style="margin: 0px auto; width: 66%; padding-right: 140px;">
+                        <tr>
+                            <td width="14%">
+                                Choose Domain :</td>
+                            <td width="20%">
+                                <asp:DropDownList ID="ddlDomain" runat="server" CssClass="select_new" 
+                                    Width="180px" AutoPostBack="True" 
+                                    onselectedindexchanged="ddlDomain_SelectedIndexChanged" >
+                                </asp:DropDownList>
+                            </td>
+                            <td style="padding-right:20px;">
+                                <div style="float: Right" id="my_menu" class="sdmenu">
+                                    <ul>
+                                        <li><asp:HyperLink runat="server" ID="hlAdvertising" Enabled="false" href="#">Advertising</asp:HyperLink></li>
+                                        <li><asp:HyperLink runat="server" ID="hlTraffic" Enabled="false" href="#">Traffic</asp:HyperLink></li>
+                                        <li><asp:HyperLink runat="server" ID="hlSocialMedia" Enabled="false" href="#">Social Media</asp:HyperLink></li>
+                                        <li><asp:HyperLink runat="server" ID="hlConversions" Enabled="false" href="#">Conversions</asp:HyperLink></li>
+                                        <li><asp:HyperLink runat="server" ID="hlAccount" Enabled="false" href="#">Account</asp:HyperLink>
+                                            <%--<ul>
+                                                <li><a href="#">Profile</a></li>
+                                                <li><a href="#">Upgrade Account</a></li>
+                                            </ul>--%>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <!------content-wrap-start------->
+                <section id="content-wrap">
+                	<!-------left-content-wrap-start-------->
+                	<section id="left-content-wrap">             
+       
+                    </section>
+                    <!-------left-content-wrap-end-------->
+                    <!---------right-content-wrap-start------------->
+                    <section class="right-content-wrap rounded">
+                    	<section class="dashboard-upper">                   	
+                                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                 </asp:ContentPlaceHolder>   
+                         <div class="clear"></div>                      
+                        </section>                   
+                        </section>
+                        </section>                     
+                    </section>
+                    <!---------right-content-wrap-end------------->
+                </section>
+                <!------content-wrap-end------->
+    <%--</section>--%>
+            <div class="clear"></div>
+    <%--</section>--%>
+        <!----inner-page-holder-end---->
+    <%--</section>--%>
+    <!------footer-start-------->
+    <footer>
+    	<section id="inner-footer">
+        	© Copyright - 2012  WebPresence, All Rights Reserved.
+        </section>
+    </footer>
+    <!------footer-end-------->
+    <asp:HiddenField ID="hfDomain" runat="server" Value="0" />
+    </form>    
+</body>
+</html>

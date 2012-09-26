@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebpresenceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="WebpresenceModelStoreContainer">
+    <EntitySet Name="AgencyClient" EntityType="WebpresenceModel.Store.AgencyClient" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Customer" EntityType="WebpresenceModel.Store.Customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Domain" EntityType="WebpresenceModel.Store.Domain" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DomainConfigure" EntityType="WebpresenceModel.Store.DomainConfigure" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DomainMapping" EntityType="WebpresenceModel.Store.DomainMapping" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Package" EntityType="WebpresenceModel.Store.Package" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Role" EntityType="WebpresenceModel.Store.Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="WebpresenceModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserLogin" EntityType="WebpresenceModel.Store.UserLogin" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AgencyClient_UserLogin" Association="WebpresenceModel.Store.FK_AgencyClient_UserLogin">
+      <End Role="UserLogin" EntitySet="UserLogin" />
+      <End Role="AgencyClient" EntitySet="AgencyClient" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_Package" Association="WebpresenceModel.Store.FK_Customer_Package">
+      <End Role="Package" EntitySet="Package" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DomainConfigure_Domain" Association="WebpresenceModel.Store.FK_DomainConfigure_Domain">
+      <End Role="Domain" EntitySet="Domain" />
+      <End Role="DomainConfigure" EntitySet="DomainConfigure" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DomainMapping_Domain" Association="WebpresenceModel.Store.FK_DomainMapping_Domain">
+      <End Role="Domain" EntitySet="Domain" />
+      <End Role="DomainMapping" EntitySet="DomainMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DomainMapping_UserLogin" Association="WebpresenceModel.Store.FK_DomainMapping_UserLogin">
+      <End Role="UserLogin" EntitySet="UserLogin" />
+      <End Role="DomainMapping" EntitySet="DomainMapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserLogin_Customer" Association="WebpresenceModel.Store.FK_UserLogin_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="UserLogin" EntitySet="UserLogin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserLogin_Role" Association="WebpresenceModel.Store.FK_UserLogin_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="UserLogin" EntitySet="UserLogin" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AgencyClient">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AgencyId" Type="int" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="Country" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="ContactNo" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="PostalCode" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="PackageFk" Type="int" Nullable="false" />
+    <Property Name="IsCancelled" Type="bit" Nullable="false" />
+    <Property Name="DateCancelled" Type="datetime" Nullable="false" />
+    <Property Name="NextPaymentDate" Type="datetime" Nullable="false" />
+    <Property Name="IsFreeTrial" Type="bit" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="DateUpdated" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Domain">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="WebsiteName" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="DomainUrl" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="KeyWords" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DomainConfigure">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DomainId" Type="int" Nullable="false" />
+    <Property Name="Advertising" Type="bit" Nullable="false" />
+    <Property Name="AdvertisingToken" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Facebook" Type="bit" Nullable="false" />
+    <Property Name="FacebookToken" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Twitter" Type="bit" Nullable="false" />
+    <Property Name="TwitterToken" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="YouTube" Type="bit" Nullable="false" />
+    <Property Name="YoutubeToken" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Traffic" Type="bit" Nullable="false" />
+    <Property Name="TrafficToken" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="Conversions" Type="bit" Nullable="false" />
+    <Property Name="ConversionsToken" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="CallTracking" Type="bit" Nullable="false" />
+    <Property Name="CallTrackingToken" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DomainMapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DomainId" Type="int" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SetUpCost" Type="numeric" Nullable="false" Scale="2" />
+    <Property Name="MonthlyCost" Type="numeric" Nullable="false" Scale="2" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UserLogin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="EmailId" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="IsClient" Type="bit" Nullable="false" />
+    <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+    <Property Name="EmailVerificationCode" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="IsEmailVerified" Type="bit" Nullable="false" />
+    <Property Name="PassWordResetCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsLoginAllowed" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="int" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AgencyClient_UserLogin">
+    <End Role="UserLogin" Type="WebpresenceModel.Store.UserLogin" Multiplicity="0..1" />
+    <End Role="AgencyClient" Type="WebpresenceModel.Store.AgencyClient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserLogin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AgencyClient">
+        <PropertyRef Name="AgencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_Package">
+    <End Role="Package" Type="WebpresenceModel.Store.Package" Multiplicity="1" />
+    <End Role="Customer" Type="WebpresenceModel.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Package">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="PackageFk" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DomainConfigure_Domain">
+    <End Role="Domain" Type="WebpresenceModel.Store.Domain" Multiplicity="1" />
+    <End Role="DomainConfigure" Type="WebpresenceModel.Store.DomainConfigure" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Domain">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DomainConfigure">
+        <PropertyRef Name="DomainId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DomainMapping_Domain">
+    <End Role="Domain" Type="WebpresenceModel.Store.Domain" Multiplicity="0..1" />
+    <End Role="DomainMapping" Type="WebpresenceModel.Store.DomainMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Domain">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DomainMapping">
+        <PropertyRef Name="DomainId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DomainMapping_UserLogin">
+    <End Role="UserLogin" Type="WebpresenceModel.Store.UserLogin" Multiplicity="0..1" />
+    <End Role="DomainMapping" Type="WebpresenceModel.Store.DomainMapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserLogin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DomainMapping">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserLogin_Customer">
+    <End Role="Customer" Type="WebpresenceModel.Store.Customer" Multiplicity="1" />
+    <End Role="UserLogin" Type="WebpresenceModel.Store.UserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserLogin">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserLogin_Role">
+    <End Role="Role" Type="WebpresenceModel.Store.Role" Multiplicity="1" />
+    <End Role="UserLogin" Type="WebpresenceModel.Store.UserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserLogin">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

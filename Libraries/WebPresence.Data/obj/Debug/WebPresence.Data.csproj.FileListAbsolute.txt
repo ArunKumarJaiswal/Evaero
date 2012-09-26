@@ -1,0 +1,12 @@
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.Data\bin\Debug\WebPresence.Data.dll
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.Data\bin\Debug\WebPresence.Data.pdb
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.Data\obj\Debug\ResolveAssemblyReference.cache
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.Data\obj\Debug\WebPresence.Data.dll
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.Data\obj\Debug\WebPresence.Data.pdb
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.Data\bin\Debug\WebPresence.Data.dll.config
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Data\bin\Debug\WebPresence.Data.dll.config
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Data\bin\Debug\WebPresence.Data.dll
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Data\bin\Debug\WebPresence.Data.pdb
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Data\obj\Debug\ResolveAssemblyReference.cache
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Data\obj\Debug\WebPresence.Data.dll
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Data\obj\Debug\WebPresence.Data.pdb

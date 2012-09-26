@@ -1,0 +1,7 @@
+﻿jQuery.noConflict();
+(function ($) {
+    $(function () {
+        // more code using $ as alias to jQuery
+    });
+})(jQuery);
+// other code using $ as an alias to the other library

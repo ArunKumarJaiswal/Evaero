@@ -1,0 +1,21 @@
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Common\bin\Debug\WebPresence.Common.dll
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Common\bin\Debug\WebPresence.Common.pdb
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Common\bin\Debug\WebPresence.DataAccessLayer.dll
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Common\bin\Debug\WebPresence.DataAccessLayer.pdb
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Common\obj\Debug\WebPresence.Common.dll
+D:\NightUser\nitin rawat\Webpresence\WebPresence.Common\obj\Debug\WebPresence.Common.pdb
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.Common\bin\Debug\WebPresence.Common.dll
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.Common\bin\Debug\WebPresence.Common.pdb
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.Common\bin\Debug\WebPresence.DataAccessLayer.dll
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.Common\bin\Debug\WebPresence.DataAccessLayer.pdb
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.Common\obj\Debug\WebPresence.Common.dll
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.Common\obj\Debug\WebPresence.Common.pdb
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.Common\bin\Debug\WebPresence.Common.dll
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.Common\bin\Debug\WebPresence.Common.pdb
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.Common\bin\Debug\WebPresence.DataAccessLayer.dll
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.Common\bin\Debug\WebPresence.DataAccessLayer.pdb
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.Common\obj\Debug\WebPresence.Common.dll
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.Common\obj\Debug\WebPresence.Common.pdb

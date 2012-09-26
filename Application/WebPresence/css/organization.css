@@ -1,0 +1,16 @@
+﻿ 
+    
+body,h1,h2
+{
+    color:#344c6b;
+}
+ 
+.rtsSelected  
+{
+    background-image:none;
+    background-color:White;
+    }
+    
+    .rbDecorated
+    {text-decoration:none;
+        }

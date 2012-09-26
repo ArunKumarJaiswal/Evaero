@@ -1,0 +1,20 @@
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.BuisnessHelper\obj\Debug\ResolveAssemblyReference.cache
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.BuisnessHelper\bin\Debug\WebPresence.BuisnessHelper.dll
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.BuisnessHelper\bin\Debug\WebPresence.BuisnessHelper.pdb
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.BuisnessHelper\obj\Debug\WebPresence.BuisnessHelper.dll
+E:\Night User\Naveen Panwar\Webpresence\WebPresence\WebPresence.BuisnessHelper\obj\Debug\WebPresence.BuisnessHelper.pdb
+D:\NightUser\nitin rawat\Webpresence\WebPresence.BuisnessHelper\bin\Debug\WebPresence.BuisnessHelper.dll
+D:\NightUser\nitin rawat\Webpresence\WebPresence.BuisnessHelper\bin\Debug\WebPresence.BuisnessHelper.pdb
+D:\NightUser\nitin rawat\Webpresence\WebPresence.BuisnessHelper\obj\Debug\ResolveAssemblyReference.cache
+D:\NightUser\nitin rawat\Webpresence\WebPresence.BuisnessHelper\obj\Debug\WebPresence.BuisnessHelper.dll
+D:\NightUser\nitin rawat\Webpresence\WebPresence.BuisnessHelper\obj\Debug\WebPresence.BuisnessHelper.pdb
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.BuisnessHelper\obj\Debug\ResolveAssemblyReference.cache
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.BuisnessHelper\obj\Debug\WebPresence.BuisnessHelper.dll
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.BuisnessHelper\bin\Debug\WebPresence.BuisnessHelper.dll
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.BuisnessHelper\bin\Debug\WebPresence.BuisnessHelper.pdb
+E:\Night User\MohitRanjanSahu\Project\WebPresence\Application\WebPresence.BuisnessHelper\obj\Debug\WebPresence.BuisnessHelper.pdb
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.BuisnessHelper\bin\Debug\WebPresence.BuisnessHelper.dll
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.BuisnessHelper\bin\Debug\WebPresence.BuisnessHelper.pdb
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.BuisnessHelper\obj\Debug\ResolveAssemblyReference.cache
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.BuisnessHelper\obj\Debug\WebPresence.BuisnessHelper.dll
+E:\Night User\Naveen Panwar\Webpresence\Repository\ArunKu\Evaero\Application\WebPresence.BuisnessHelper\obj\Debug\WebPresence.BuisnessHelper.pdb
